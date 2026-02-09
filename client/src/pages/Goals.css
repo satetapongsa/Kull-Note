@@ -1,0 +1,245 @@
+/* Goals Page */
+.goals-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.goals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.goals-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stats-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.empty-state {
+    padding: 3rem;
+    text-align: center;
+}
+
+.empty-state p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.goal-card {
+    padding: 1.25rem;
+}
+
+.goal-card.completed {
+    opacity: 0.7;
+}
+
+.goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.goal-category {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.goal-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.goal-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.progress-section {
+    margin-bottom: 1rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-full);
+    transition: width 0.3s;
+}
+
+.progress-section input[type="range"] {
+    width: 100%;
+    accent-color: var(--primary);
+}
+
+.milestones-section h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.milestone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.milestone.done {
+    opacity: 0.6;
+}
+
+.milestone.done span:last-child {
+    text-decoration: line-through;
+}
+
+.milestone-check {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--text-muted);
+    border-radius: 4px;
+}
+
+.milestone.done .milestone-check {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.add-milestone input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    background: var(--bg-tertiary);
+    border: 1px dashed var(--surface-border);
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.hobby-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hobby-icon {
+    font-size: 2rem;
+}
+
+.hobby-info {
+    flex: 1;
+}
+
+.hobby-info h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hobby-info p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.log-btn {
+    flex-shrink: 0;
+}
+
+.delete-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    opacity: 0;
+}
+
+.goal-card:hover .delete-btn,
+.hobby-card:hover .delete-btn {
+    opacity: 1;
+}
+
+.delete-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}

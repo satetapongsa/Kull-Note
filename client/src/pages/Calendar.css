@@ -1,0 +1,106 @@
+/* Calendar Page */
+.calendar-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.calendar-container {
+    padding: 1.5rem;
+}
+
+.calendar-container .fc {
+    font-family: inherit;
+}
+
+.calendar-container .fc-toolbar-title {
+    font-size: 1.25rem !important;
+}
+
+.calendar-container .fc-button {
+    background: var(--bg-tertiary) !important;
+    border: none !important;
+    color: var(--text-secondary) !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+}
+
+.calendar-container .fc-button:hover {
+    background: var(--bg-hover) !important;
+    color: var(--text-primary) !important;
+}
+
+.calendar-container .fc-button-active {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.calendar-container .fc-daygrid-day {
+    background: var(--bg-secondary);
+    border-color: var(--surface-border) !important;
+}
+
+.calendar-container .fc-daygrid-day:hover {
+    background: var(--bg-hover);
+}
+
+.calendar-container .fc-daygrid-day-number {
+    color: var(--text-primary);
+    padding: 0.5rem;
+}
+
+.calendar-container .fc-day-today {
+    background: var(--primary-light) !important;
+}
+
+.calendar-container .fc-event {
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.calendar-container .fc-col-header-cell {
+    background: var(--bg-tertiary);
+    border-color: var(--surface-border) !important;
+}
+
+.calendar-container .fc-col-header-cell-cushion {
+    color: var(--text-secondary);
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.type-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.type-toggle button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+}
+
+.type-toggle button.active {
+    background: var(--primary);
+    color: white;
+}
